@@ -1,0 +1,12 @@
+Amazon S3:
+Amazon S3 (Simple Storage Service) is a scalable, high-performance object storage service provided by AWS. It allows you to store any amount of data at any time from anywhere on the web. S3 is designed to provide durability, availability, and scalability for data storage, which is ideal for backup, archival, and application data. you can control access of your dafa by using AWS IAM and using ACLs 
+Key features:
+ .scalability
+ .Durability
+ .Availability
+ .security 
+>mplement Security for Sensitive Data Stored:
+ we can use method to secure our data like we use IAM roles and polices to give  control access on our s3 bucket use bucket polices to restrict access at bucket level for example you and  specific a ip address to access the bucket  and use MFA to secure your object from accidental deletion 
+>Optimize the Cost for Storing Large Amounts of Data in S3
+ we can choose the right class to optimize the cost For archival data, use S3 Glacier or S3 Glacier Deep Archive which are much cheaper than S3 Standard.
+or use lifecycle policies or compress your data to reduce cost 

@@ -1,0 +1,22 @@
+INFO: Application started
+INFO: User logged in
+WARN: Low disk space on /dev/sda1
+ERROR: Unable to connect to database
+INFO: File uploaded successfully
+WARN: Deprecated API usage detected
+ERROR: Null pointer exception occurred
+ERROR: Timeout while waiting for response
+INFO: Scheduled job completed
+ERROR: Disk write failure
+ERROR: Permission denied accessing /etc/config
+WARN: Configuration mismatch detected
+ERROR: Network connection lost
+ERROR: Out of memory while processing request
+ERROR: Invalid input format
+INFO: Task successfully completed
+ERROR: Service not responding
+ERROR: Authentication failed
+ERROR: Could not load configuration
+INFO: Shutdown initiated
+ERROR: Fatal system crash detected
+ERROR: Unable to allocate memory

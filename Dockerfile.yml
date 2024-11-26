@@ -1,0 +1,28 @@
+
+#Question:1 Optimized docker image 
+
+FROM maven:3.8.7-openjdk-11 AS builder
+
+WORKDIR /app
+
+# Clone the  code from  the given Repo
+RUN git clone https://github.com/admaxim-user/java-project.git .
+
+RUN mvn clean package
+
+FROM tomcat:9-jdk11-adoptopenjdk-hotspot
+
+COPY --from=builder /app/target/app-java.war /usr/local/tomcat/webapps/ROOT.war
+
+EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
+
+  #build docker images from the docker file
+  #docker build -t java-app .
+  #run the image on port 8080
+  #docker run -d --name java-app -p 8080:8080 java-app 
+ 
+ #now you can  access the app on http://localhost:8080
+
+ 

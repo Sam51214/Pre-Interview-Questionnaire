@@ -1,0 +1,11 @@
+
+Bastion Host 
+A bastion host is used as a secure gateway to access the servers in a private subnets  from a public Bastion Host   it is used because our private subnets are not directly  accessible  from the internet  for security reasons it allow  to connect the server using SSH 
+
+
+
+>Creating a  Virtual Private Cloud (VPC)
+
+first you have to create a Vpc by defining the CIDR Block then create public and private subnets  by giving them a CIDR block  and assign them a AZ  then configure the  internet Gateway  and then attach the Gateway to VPC  then create a routing table  for the public subnets 
+now create a EC2 instance and assign the IP to it   (public Subnet)
+then create one more EC2 instance  for internal service   we will not give a public ip to this instance 
