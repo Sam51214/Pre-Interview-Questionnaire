@@ -1,5 +1,5 @@
 
-LOG_FILE="/var/log/app.log"
+LOG_FILE="/app.log"
 
 EMAIL="s.ali.murtaza1@gmail.com"
 if [[ ! -f "$LOG_FILE" ]]; then
