@@ -6,7 +6,7 @@ FROM maven:3.8.7-openjdk-11 AS builder
 WORKDIR /app
 
 # Clone the  code from  the given Repo
-RUN git clone https://github.com/admaxim-user/java-project.git .
+RUN git clone https://github.com/admaxim-user/java-project.git . # mostly we make dockerfile in the repo cloning is not good paratice
 
 RUN mvn clean package
 
